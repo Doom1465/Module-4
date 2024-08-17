@@ -3,6 +3,7 @@
 *{
     margin:0;
     font-family: "Inter", sans-serif;
+    scroll-behavior: smooth;
 }
 section{
     background-position: center;
@@ -46,6 +47,8 @@ section{
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+    z-index: 2;
+    position: relative;
 }
 .main-title{
     color: #2B2D35;
@@ -83,4 +86,321 @@ section{
 }
 .button:hover{
     background-color: #d2fc7a;
+}
+.planet{
+    width: 706px;
+    height: auto;
+    margin-right: 20px;
+    transform: rotate(178deg);
+    position: absolute;
+    z-index: 0;
+    right: 460px;
+}
+.moving_planet{
+    background-image: url(img/moving-planet.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 230px;
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    animation-name: levitate;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes levitate {
+    from{transform: translate(0px, 0px);}
+    to{transform: translate(0px, -140px);}
+}
+.title{
+    color: white;
+    font-weight: 700;
+    font-size: 80px;
+    text-shadow: 5px 5px black;
+    padding-top: 119px;
+    text-align: center;
+}
+.about-content{
+    width: 35%;
+    height: 270px;
+    padding: 40px;
+    background-color: #792AFF;
+    display: flex;
+    position: relative;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: space-around;
+}
+.about-title{
+    font-family: "Comfortaa", sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+    color: white;
+    margin-bottom: 20px;
+}
+.about-card{
+    background-image: url(img/form2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 386px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 10px;
+}
+.about-card p{
+    font-size: 16px;
+    color: black;
+    margin: 5px 0;
+
+}
+.about-card img{
+    width: 336px;
+    height: 186px;
+    padding: 40px;
+    padding-bottom: 10px;
+    
+}
+.about-text{
+    width: 330px;
+}
+.skills-card{
+    background-image: url(img/form3.png);
+    height: 450px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    margin-top: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    border-bottom: 3px solid black;
+}
+.skills-card p{
+    color: #000000;
+    font-size: 30px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    font-weight: 70%;
+}
+.works-block{
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    margin: auto;
+    margin-top: 100px;
+
+}
+.works-block img{
+    width: 28%;
+}
+.comments-block{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+
+}
+.comments-card{
+    background-image: url(img/card.png);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+    border-radius: 10px;
+    margin: 100px;
+}
+.comments-card img{
+    margin-top: 20px;
+}
+.comments-card h3{
+    font-family: "Comfortaa", sans-serif;
+    font-size: 24px;
+    padding: 10px;
+    font-weight: 800;
+}
+.comments-card p{
+    font-family: "Comfortaa", sans-serif;
+    font-size: 20px;
+    padding: 10px 20px;
+    text-align: center;
+
+}
+.comment{
+    background-image: url(img/comment.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 350px;
+    height: 172px;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 4px 4px yellow;
+    border-radius: 10px;
+    
+}
+.comment p{
+    max-width: 70%;
+    text-align: center;
+    font-size: 24px;
+    font-family: "Comfortaa", sans-serif;
+}
+.footer{
+    background-color: #200153;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+}
+.Foot-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+}
+.Name-ofcreator{
+    font-family: "Comfortaa", sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+    color: white;
+    margin-bottom: 20px;
+}
+.Date{
+    font-family: "Comfortaa", sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+    color: white;
+    margin-bottom: 20px; 
+}
+nav{
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    top: 0;
+}
+.fixed-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    padding: 0 25px;
+}
+.nav-links{
+    display: flex;
+    justify-content: space-evenly;
+    flex-grow: 1;
+}
+.nav-link{
+    width: 140px;
+    height: 40px;
+    border-radius: 15px;
+    border: #000000 solid 2px;
+    background-color: aliceblue;
+    text-decoration: none;
+    color: #000000;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Comfortaa", sans-serif;
+    transition: all 0.5s;
+}
+.logo{
+    color: #BBFF2C;
+    font-size: 80px;
+}
+.nav-link:hover{
+    background-color: #BBFF2C;
+    transform: translate( 2px , 3px);
+}
+.active{
+    background-color: #BBFF2C;
+}
+@media (max-width: 1000px){
+    .nav-links {
+        display: none;
+    }
+    .logo{
+        font-size: 40px;
+        padding: 20px;
+    }
+    .main-content{
+        max-width: 400px;
+    }
+    .main-title{
+        font-size: 30px;
+        padding-top: 39px;
+    }
+    .main-subtitle{
+        font-size: 20px;
+    }
+    .main-block img , .planet, .moving_planet{
+        display: none;
+    }
+    .button{
+        width: 150px;
+        height: 40px;
+    }
+    .title{
+        font-size: 50px;
+        padding-top: 30px;
+    }
+    .about-content{
+        flex-direction: column;
+        margin-top: 20px;
+        padding: 0px;
+        height: auto;
+        width: 406px;
+    }
+    .about-block{
+        height: auto;
+    }
+    .about-text .button{
+        margin: auto;
+    }
+    .about-text{
+        padding: 15px;
+        width: 356px;
+    }
+    .about-card{
+        order: -1;
+    }
+    .works-block{
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    .works-block img{
+        margin: 20px 0;
+        width: 80%;
+    }
+    .comments-block{
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .comments-card{
+        margin: 20px;
+    }
+    .comment p{
+        font-size: 20px;
+    }
+    .comment{
+        margin-bottom: 20px;
+    }
+    .mobile-button{
+        display: ;
+    }
+
+}
+.hide{
+    display: none;
 }

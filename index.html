@@ -7,9 +7,24 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <nav>
+        <div class="fixed-menu">
+            <h1 class="logo">EZ</h1>
+            <div class="nav-links">
+                <a href="#main" class="nav-link main-link active" >Main</a>
+                <a href="#about" class="nav-link about-link">About</a>
+                <a href="#skills" class="nav-link skills-link">Skills</a>
+                <a href="#works" class="nav-link works-link">Works</a>
+                <a href="#comments" class="nav-link comments-link">Comments</a>
+            </div>
+            <div class="mobile-button">
+                
+            </div>
+        </div>
+    </nav>
     <section id="main">
         <div class="main-block">
-            <img src="img/maskot.png">
+            <img src="img/maskot.png" class="mascot">
             <div class="main-content">
                 <h1 class="main-title">Ernest Zaprudnov</h1>
                 <p class="main-subtitle">Developer's pesonal page</p>
@@ -17,28 +32,94 @@
             <div class="button">
                 <a href="">Details</a>
             </div>
+            <img src="img/planet.png" class="planet">
         </div>
+        <div class="moving_planet"></div>
     </section>
     <section id="about">
+        <h1 class="title">About Me</h1>
         <div class="about-block">
-
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-title">
+                        My name is Ernest, and I working on creating cites and applications.
+                        <br>
+                        <br>
+                        I like creating interesting and modern projects.
+                    </p>
+                    <div class="button">
+                        <a href="#">My skills</a>
+                    </div>
+                </div>
+                <div class="about-card">
+                    <img src="img/photo.png" alt="My_photo">
+                    <p><strong>Where I live?:</strong> US</p>
+                    <p>My age: 17</p>
+                    <p>Date of birth: 2007</p>
+                </div>
+            </div>
         </div>
     </section>
     <section id="skills">
+        <h1 class="title">Skills</h1>
         <div class="skills-block">
-
+            <div class="skills-card">
+                <p>This site I made while studying in Rocket tech school</p>
+                <div class="languages">
+                    <img src="img/html.png" alt="#" width="130">
+                    <img src="img/css.png" alt="#" width="130">
+                    <img src="img/js.png" alt="#" width="130">
+                </div>
+                <div class="button">
+                    <a href="#">See projects</a>
+                </div>
+            </div>
         </div>
     </section>
     <section id="works">
+        <h1 class="title">Works</h1>
         <div class="works-block">
-
+            <img src="img/work1.png" alt="#">
+            <img src="img/work2.png" alt="#">
+            <img src="img/work3.png" alt="#">
         </div>
     </section>
     <section id="comments">
+        <h1 class="title">Comments</h1>
         <div class="comments-block">
-
+            <div class="comments-card">
+                <img src="img/photo1.png" alt="#">
+                <h3>Vladimir Kornigor</h3>
+                <p>Founder RTS</p>
+            </div>
+            <div class="comment">
+                <p>This guy studied for 4 month and already creates complex sites</p>
+            </div>
+            <div class="comments-card">
+                <img src="img/photo2.png" alt="#">
+                <h3>Diana</h3>
+                <p>Product TL RTS</p>
+            </div>
+            <div class="comment">
+                <p>Writes clean code. Exelent site optimisation. Modern, stylish, fashinable</p>
+            </div>
         </div>
     </section>
+    <footer class="footer">
+        <div class="Foot-div">
+            <div class="Name-ofcreator">
+                <p class="Name-cr">Ernest Zaprudnov</p>
+                <p class="Site">Private site WebDev</p>
+            </div>
+            <div class="Date">&copy; 2024</div>
+            <div class="FAQ">
+                <img src="img/discord.svg" alt="#">
+                <img src="img/facebook.svg" alt="#">
+                <img src="img/instagram.svg" alt="#">
+                <img src="img/telegram.svg" alt="#">
+            </div>
+        </div>
+    </footer>
     
     <script src="script.js"></script>
 </body>
